@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(/assets/fonts/Roboto.zip);
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.bg-color {
+  background-color: rgb(2, 2, 48);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.title h2 {
+  font-size: 34px;
+  color: rgb(2, 2, 48);
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.title p {
+  font-size: 20px;
+  color: rgb(6, 3, 3);
+}
+
+.icons {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+}
+.icons .fa-angle-left {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.icons .fa-angle-left:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 48);
+  border: 1px solid rgb(255, 255, 255);
+}
+.icons .fa-angle-right {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.icons .fa-angle-right:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 48);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo h1 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+header ul li {
+  margin: 0 25px;
+}
+header ul a {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding-right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+header ul a:hover {
+  color: rgb(3, 167, 211);
+}
+
+#main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .container .main h1 {
+  font-size: 40px;
+  padding-bottom: 25px;
+  color: rgb(255, 255, 255);
+}
+#main .container .main p {
+  font-size: 18px;
+  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
+}
+#main .container .main .link .btn {
+  border: 1px solid rgb(3, 167, 211);
+  padding: 15px 60px;
+  border-radius: 8px;
+  background-color: rgb(3, 167, 211);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+  margin-right: 10px;
+}
+#main .container .main .link .btn:hover {
+  background-color: transparent;
+  color: rgb(3, 167, 211);
+}
+#main .container .main .link .btn1 {
+  border: 1px solid rgb(255, 70, 70);
+  padding: 15px 60px;
+  border-radius: 8px;
+  background-color: rgb(255, 70, 70);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+#main .container .main .link .btn1:hover {
+  background-color: transparent;
+  color: rgb(255, 70, 70);
+}
+#main .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -70px;
+}
+
+#services .services {
+  display: grid;
+  gap: 40px;
+}
+#services .services .box {
+  width: 320px;
+  height: 300px;
+  padding-top: 30px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#services .services .box:hover .box-img {
+  background-color: rgb(255, 70, 70);
+}
+#services .services .box .box-img {
+  width: 80px;
+  height: 80px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  background-color: rgb(3, 167, 211);
+}
+#services .services .box .box-img img {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+#services .services .box h2 {
+  font-size: 22px;
+  color: rgb(2, 2, 48);
+  padding-bottom: 20px;
+}
+#services .services .box p {
+  font-size: 17px;
+  color: rgb(2, 2, 48);
+  padding-bottom: 30px;
+}
+#services .services .box .btn {
+  padding: 10px 15px;
+  border: 1px solid rgb(3, 167, 211);
+  border-radius: 7px;
+  background-color: rgb(3, 167, 211);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+#services .services .box .btn:hover {
+  background-color: rgb(255, 70, 70);
+  border: 1px solid rgb(255, 70, 70);
+}
+
+#about .about {
+  display: grid;
+  gap: 10px;
+}
+#about .about .card {
+  width: 500px;
+  padding-top: 100px;
+}
+#about .about .card h1 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 25px;
+}
+#about .about .card p {
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 55px;
+  color: rgb(255, 255, 255);
+}
+#about .about .card .btn {
+  border: 1px solid rgb(3, 167, 211);
+  padding: 15px 40px;
+  border-radius: 8px;
+  background-color: rgb(3, 167, 211);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+#about .about .card .btn:hover {
+  background-color: transparent;
+  color: rgb(3, 167, 211);
+}
+#about .about div {
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+#about .about div img {
+  width: 400px;
+  height: 400px;
+}
+#about .about .text {
+  padding-top: 100px;
+}
+#about .about .text h1 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 25px;
+}
+#about .about .text p {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  padding-bottom: 55px;
+}
+#about .about .text .btn {
+  border: 1px solid rgb(255, 70, 70);
+  padding: 15px 40px;
+  border-radius: 8px;
+  background-color: rgb(255, 70, 70);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+#about .about .text .btn:hover {
+  background-color: transparent;
+  color: rgb(255, 70, 70);
+}
+
+#pricing .pricing {
+  display: grid;
+  gap: -100px;
+}
+#pricing .pricing .card-pricing {
+  width: 330px;
+  height: 340px;
+  padding-top: 50px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.4s ease-in-out;
+}
+#pricing .pricing .card-pricing:hover {
+  background-color: rgb(3, 167, 211);
+  color: rgb(255, 255, 255);
+}
+#pricing .pricing .card-pricing:hover h1 {
+  color: rgb(255, 255, 255);
+}
+#pricing .pricing .card-pricing:hover h3 {
+  color: rgb(255, 255, 255);
+}
+#pricing .pricing .card-pricing:hover .btn {
+  background-color: rgb(3, 167, 211);
+}
+#pricing .pricing .card-pricing h1 {
+  font-size: 35px;
+  padding-bottom: 25px;
+  color: rgb(2, 2, 48);
+}
+#pricing .pricing .card-pricing h3 {
+  font-size: 22px;
+  color: rgb(3, 167, 211);
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+#pricing .pricing .card-pricing ul {
+  list-style-type: none;
+  padding-bottom: 60px;
+}
+#pricing .pricing .card-pricing ul li {
+  padding-bottom: 8px;
+}
+#pricing .pricing .card-pricing .btn {
+  padding: 12px 24px;
+  background-color: rgb(255, 70, 70);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+
+#testimonial .testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+#testimonial .testimonial .icons {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+}
+#testimonial .testimonial .icons .fa-angle-left {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+#testimonial .testimonial .icons .fa-angle-left:hover {
+  background-color: rgb(255, 70, 70);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 70, 70);
+}
+#testimonial .testimonial .icons .fa-angle-right {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+#testimonial .testimonial .icons .fa-angle-right:hover {
+  background-color: rgb(255, 70, 70);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 70, 70);
+}
+#testimonial .testimonial .box {
+  width: 880px;
+  height: 230px;
+  padding: 45px 45px 45px 89px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#testimonial .testimonial .box h2 {
+  margin-top: -130px;
+  font-size: 28px;
+  color: rgb(3, 167, 211);
+}
+#testimonial .testimonial .box h3 {
+  font-size: 16px;
+  color: rgb(255, 70, 70);
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+#testimonial .testimonial .box p {
+  line-height: 20px;
+}
+#testimonial .testimonial .box img {
+  width: 120px;
+  height: 120px;
+  margin-left: -150px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    flex-direction: column;
+  }
+  #main .container {
+    flex-direction: column;
+  }
+  #services .services {
+    grid-template-columns: 1fr;
+  }
+  #about .about {
+    grid-template-columns: 1fr;
+  }
+  #pricing .pricing {
+    grid-template-columns: 1fr;
+  }
+  #testimonial .testimonial {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 850px) {
+  .container {
+    width: 1250px;
+  }
+  header {
+    flex-direction: row;
+  }
+  #main .container {
+    flex-direction: row;
+  }
+  #services .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #about .about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #pricing .pricing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #testimonial .testimonial {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
