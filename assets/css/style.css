@@ -9,6 +9,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+#check {
+  display: none;
+}
+
+.icon {
+  position: absolute;
+  right: 5%;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -137,6 +150,9 @@ header ul a:hover {
   background-color: transparent;
   color: rgb(255, 70, 70);
 }
+#main .container .image img {
+  width: 550px;
+}
 #main .icons {
   display: flex;
   justify-content: space-between;
@@ -226,15 +242,15 @@ header ul a:hover {
   background-color: transparent;
   color: rgb(3, 167, 211);
 }
-#about .about div {
-  padding-bottom: 50px;
-  padding-top: 30px;
+#about .about .image {
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
-#about .about div img {
-  width: 400px;
-  height: 400px;
+#about .about .image img {
+  width: 500px;
 }
 #about .about .text {
+  width: 500px;
   padding-top: 100px;
 }
 #about .about .text h1 {
@@ -263,7 +279,7 @@ header ul a:hover {
 
 #pricing .pricing {
   display: grid;
-  gap: -100px;
+  gap: 60px;
 }
 #pricing .pricing .card-pricing {
   width: 330px;
@@ -312,88 +328,286 @@ header ul a:hover {
   color: rgb(255, 255, 255);
 }
 
-#testimonial .testimonial {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 50px;
-}
-#testimonial .testimonial .icons {
-  color: rgb(255, 255, 255);
-  font-size: 23px;
-}
-#testimonial .testimonial .icons .fa-angle-left {
+#info .info {
   border: 1px solid rgb(3, 167, 211);
-  background-color: rgb(3, 167, 211);
-  padding: 18px 18px;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
-#testimonial .testimonial .icons .fa-angle-left:hover {
-  background-color: rgb(255, 70, 70);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 70, 70);
+#info .info .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
 }
-#testimonial .testimonial .icons .fa-angle-right {
-  border: 1px solid rgb(3, 167, 211);
-  background-color: rgb(3, 167, 211);
-  padding: 18px 18px;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
+#info .info .input-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  margin: 20px 0;
+  border: none;
+  border-bottom: 2px solid rgb(3, 167, 211);
+  outline: none;
 }
-#testimonial .testimonial .icons .fa-angle-right:hover {
-  background-color: rgb(255, 70, 70);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 70, 70);
+#info .info .input-box input:focus ~ span, #info .info .input-box input:valid ~ span {
+  color: rgb(2, 2, 48);
+  font-size: 14px;
+  transform: translateY(-25px);
 }
-#testimonial .testimonial .box {
-  width: 880px;
-  height: 230px;
-  padding: 45px 45px 45px 89px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-#testimonial .testimonial .box h2 {
-  margin-top: -130px;
-  font-size: 28px;
+#info .info .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  margin: 20px 0;
+  pointer-events: none;
+  transition: 0.4s;
   color: rgb(3, 167, 211);
 }
-#testimonial .testimonial .box h3 {
+#info .info .input-box [type=submit] {
+  width: 200px;
+  background-color: rgb(3, 167, 211);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 20px;
+  margin-left: 30%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer .footer {
+  display: grid;
+  gap: 15px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+footer .footer .address h2 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+footer .footer .address h3 {
+  padding: 10px 0;
   font-size: 16px;
-  color: rgb(255, 70, 70);
-  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+footer .footer .address h3 i {
+  padding-right: 8px;
+  transition: all 0.4s ease-in-out;
+}
+footer .footer .address h3 i:hover {
+  color: rgb(3, 167, 211);
+  cursor: pointer;
+}
+footer .footer .links {
+  padding-left: 50px;
+}
+footer .footer .links h2 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+footer .footer .links h3 {
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+footer .footer .links h3:hover {
+  color: rgb(3, 167, 211);
+  cursor: pointer;
+}
+footer .footer .info {
+  padding-left: 50px;
+}
+footer .footer .info h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+footer .footer .info p {
   padding-bottom: 25px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: left;
 }
-#testimonial .testimonial .box p {
-  line-height: 20px;
+footer .footer .info i {
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
 }
-#testimonial .testimonial .box img {
-  width: 120px;
-  height: 120px;
-  margin-left: -150px;
-  border-radius: 50%;
+footer .footer .info i:hover {
+  color: rgb(3, 167, 211);
+  cursor: pointer;
+}
+footer hr {
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 25px 0;
+}
+footer p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 760px) {
   .container {
     width: 90%;
   }
+  a .fa-solid {
+    display: none;
+  }
+  .icon {
+    display: inline-flex;
+  }
+  .icon #close-icon {
+    display: none;
+  }
+  #check:checked ~ .icon #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icon #close-icon {
+    display: block;
+  }
+  #check:checked ~ nav {
+    height: 280px;
+  }
+  #check:checked ~ nav a {
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+  }
   header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  header nav {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(2, 2, 48);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  header nav a {
+    display: block;
+    font-size: 18px;
+    margin: 18px;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+  }
+  header ul {
     flex-direction: column;
   }
   #main .container {
     flex-direction: column;
   }
+  #main .container .main h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #main .container .main p {
+    font-size: 14px;
+  }
+  #main .container .main .link {
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  #main .container .main .link .btn {
+    padding: 10px 35px;
+  }
+  #main .container .main .link .btn1 {
+    padding: 10px 35px;
+  }
+  #main .container .image {
+    padding-bottom: 30px;
+  }
+  #main .container .image img {
+    width: 100%;
+  }
+  #services {
+    height: 0 auto;
+  }
   #services .services {
     grid-template-columns: 1fr;
+  }
+  #services .services .box {
+    width: 100%;
+  }
+  #services .services .box .box-img {
+    margin-left: 135px;
   }
   #about .about {
     grid-template-columns: 1fr;
   }
+  #about .about .card {
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  #about .about .card h1 {
+    text-align: center;
+  }
+  #about .about .card p {
+    text-align: left;
+  }
+  #about .about .image img {
+    width: 350px;
+  }
+  #about .about .text {
+    width: 350px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  #about .about .text h1 {
+    font-size: 30px;
+  }
+  #about .about .text p {
+    font-size: 14px;
+  }
   #pricing .pricing {
     grid-template-columns: 1fr;
+    padding-bottom: 10px;
+    height: 0 auto;
   }
-  #testimonial .testimonial {
-    flex-direction: column;
+  #pricing .pricing .card-pricing {
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  #info .info {
+    width: 350px;
+    height: auto;
+  }
+  #info .info .input-box [type=submit] {
+    width: 100px;
+    padding: 10px 5px;
+    margin-left: 100px;
+  }
+  footer .footer {
+    grid-template-columns: 1fr;
+  }
+  footer .footer .address {
+    padding-bottom: 50px;
+  }
+  footer .footer .links {
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+  footer .footer .info {
+    padding-left: 0;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 850px) {
@@ -415,7 +629,7 @@ header ul a:hover {
   #pricing .pricing {
     grid-template-columns: repeat(3, 1fr);
   }
-  #testimonial .testimonial {
-    flex-direction: row;
+  footer .footer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

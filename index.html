@@ -6,23 +6,31 @@
     <title>Host</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-    <header class="bg-color">
+    <header class="bg-color" >
+        
             <div class="logo">
-                <h1>Logo</h1>
+                <h1>HOST</h1>
             </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icon">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i> 
+            </label>
 
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i> CALL:+01 25478585588455842</a></li>
+                    <li><a href="#" style="--i:0">HOME</a></li>
+                    <li><a href="#" style="--i:1">ABOUT</a></li>
+                    <li><a href="#" style="--i:2">SERVICES</a></li>
+                    <li><a href="#" style="--i:3">PRICING</a></li>
+                    <li><a href="#" style="--i:4">CONTACT US</a></li>
+                    <li><a href="#" style="--i:5"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#" style="--i:6"><i class="fa-solid fa-phone"></i> CALL:+01 25478585588455842</a></li>
                 </ul>
             </nav>
     </header>
@@ -114,7 +122,7 @@
                     <p>Words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks</p>
                     <a href="#" class="btn">Read More</a>
                 </div>
-                <div>
+                <div class="image">
                     <img src="./assets/images/about.png">
                 </div>
                 <div class="image">
@@ -180,89 +188,78 @@
         </div>
     </section>
 
-    <section id="testimonial">
-        <div class="container">
-            <div class="title">
-                <h2>Testimonial</h2>
-                <p>Even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to.</p>
-            </div>
-            <div class="testimonial">
-                <div class="icons">
-                    <i class="fa-solid fa-angle-left"></i>
-                </div>
-                
-                <div class="box">
-                    <img src="./assets/images/client.jpg">
-                    <h2>Andis</h2>
-                    <h3>CUSTOMER</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                </div>
-
-                <div class="icons">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-            </div>
-
-
-
-
-
-
-        </div>
-        
-    </section>
-
-    <section id="get-in-touch">
+    <section id="info">
         <div class="container">
             <div class="title">
                 <h2>Get In Touch</h2>
             </div>
-            <div class="get-in-touch">
+
+            <div class="info">
                 <form>
-                    <input type="Your Name" required="required">
-                    <input type="Your Email" required="required">
-                    <input type="Your Phone" required="required">
-                    <textarea name="Message" cols="20" rows="7"></textarea>
-                    <button>SEND</button>
+                    <div class="input-box">
+                        <input type="text" name="" required="required">
+                        <span>Your Name</span>
+                    </div>
+                    <!------------./input-box  ---------->
+                    <div class="input-box">
+                        <input type="text" name="" required="required">
+                        <span>Your Email</span>
+                    </div>
+                    <!-------------./input-box  --------->
+                    <div class="input-box">
+                        <input type="text" name="" required="required">
+                        <span>Your Phone</span>
+                    </div>
+                    <!--------------./input-box  -------->
+    
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+                    </div>
                 </form>
             </div>
+            
+
+
+
+
+
         </div>
     </section>
 
     <footer class="bg-color">
         <div class="container">
-            <div class="address">
-                <h2>Address</h2>
-                <h3><i class="fa-solid fa-location-dot"></i> Location</h3>
-                <h3><i class="fa-solid fa-phone"></i> Call:XXX-XXX</h3>
-                <h3><i class="fa-regular fa-envelope"></i> mail@email.com</h3>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="links">
-                <h2>Links</h3>
-                <h3>Home</h3>
-                <h3>About</h3>
-                <h3>Services</h3>
-                <h3>Pricing</h3>
-                <h3>Contact Us</h3>
-            </div>
-            <div class="info">
-                <h2>Info</h2>
-                <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
-            </div>
-            <div class="subscribe">
-                <h2>Subscribe</h2>
-                <input type="Enter Email">
-                <button>Subscribe</button>
-            </div>
+            <div class="footer">
+                <div class="address">
+                    <h2>Address</h2>
+                    <h3><i class="fa-solid     fa-location-dot"></i> Location</h3>
+                    <h3><i class="fa-solid fa-phone"></i> Call:XXX-XXX</h3>
+                    <h3><i class="fa-regular     fa-envelope"></i> mail@email.com </h3>  
+                </div>
 
-            <hr>
-            <p>© 2023 All Rights Reserved. By AG</p>
+                <div class="links">
+                    <h2>Links</h3>
+                    <h3>Home</h3>
+                    <h3>About</h3>
+                    <h3>Services</h3>
+                    <h3>Pricing</h3>
+                    <h3>Contact Us</h3>
+                </div>
+
+                <div class="info">
+                    <h2>Info</h2>
+                    <p>Necessary, making this the  first true generator on the    Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands     fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>  
+            </div>
         </div>
-    </footer>
+
+        <hr>
+            <p>© 2023 All Rights Reserved. By AG</p>
     
+    </footer>
+        
 </body>
 </html>
