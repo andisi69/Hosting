@@ -20,50 +20,8 @@ $black: rgb(6, 3, 3);
     display: none;
 }
 
-.icon {
-    position: absolute;
-    right: 5%;
-    font-size: 32px;
-    color: $white;
-    cursor: pointer;
-    display: none;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-section {
-    padding: 70px 0;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-.bg-color {
-    background-color: $bg-color;
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 50px;
-
-    h2 {
-        font-size: 34px;
-        color: $bg-color;
-        margin-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    p {
-        font-size: 20px;
-        color: $black;
-    }
-}
-
 .icons {
+
     color: $white; 
     font-size: 23px;
 
@@ -96,6 +54,50 @@ section {
     }
 }
 
+.icon {
+    position: absolute;
+    right: 5%;
+    font-size: 32px;
+    color: $white;
+    cursor: pointer;
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.bg-color {
+    background-color: $bg-color;
+}
+
+.title {
+
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 34px;
+        color: $bg-color;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color: $black;
+    }
+}
+
 header { 
     
     height: 100px;
@@ -104,6 +106,7 @@ header {
     align-items: center;
     
     .logo {
+
         h1 {
             font-size: 30px;
             color: $white;
@@ -112,6 +115,7 @@ header {
     }
     
     ul {
+
         display: flex;
         list-style-type: none;
            
@@ -263,6 +267,7 @@ header {
 }
 
 #about {
+
     .about {
         display: grid;
         gap: 10px;
@@ -336,13 +341,13 @@ header {
                     background-color: transparent;
                     color: $red;
                 }
-
             }
-       }
+        }
     }
 }
 
 #pricing {
+
     .pricing {
         display: grid;
         gap: 60px;
@@ -405,6 +410,7 @@ header {
 }
 
 #info {
+
     .info {
         border: 1px solid  $light;
         width: 500px;
@@ -459,6 +465,7 @@ header {
 }
 
 footer {
+
     .footer {
         display: grid;
         gap: 15px;
@@ -667,24 +674,26 @@ footer {
     #services {
         height: 0 auto;
         .services {
-           grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
            
-           .box {
-            width: 100%;
+            .box {
+                width: 100%;
 
-            .box-img {
-                margin-left: 135px;
+                .box-img {
+                    margin-left: 40%;
+                }
             }
-           }
         }
     }
 
     #about {
+
         .about {
+            height: 0 auto;
             grid-template-columns: 1fr;
 
             .card {
-                width: 350px;
+                width: 100%;
                 padding-top: 20px;
                 padding-bottom: 40px;
                 text-align: center;
@@ -700,7 +709,7 @@ footer {
 
             .image {
                 img {
-                    width: 350px;
+                    width: 100%;
                 }
             }
 
@@ -721,6 +730,7 @@ footer {
     }
 
     #pricing {
+
         .pricing {
             grid-template-columns: 1fr;
             padding-bottom: 10px;
@@ -731,9 +741,7 @@ footer {
                 padding-top: 40px;
                 margin-top: 20px;
                 margin-bottom: 60px;
-            }
-
-            
+            }   
         }
     }
 
@@ -750,11 +758,12 @@ footer {
                     margin-left: 100px;
 
                 }
-           }
+            }
         }
     }
 
     footer {
+        padding-bottom: 50px;
         .footer {
             grid-template-columns: 1fr;
 
@@ -772,9 +781,7 @@ footer {
                 padding-bottom: 50px;
             }
         }
-    }
-
-    
+    }   
 }
 
 @media screen and (min-width: 850px) {

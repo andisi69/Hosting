@@ -13,6 +13,35 @@
   display: none;
 }
 
+.icons {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+}
+.icons .fa-angle-left {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.icons .fa-angle-left:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 48);
+  border: 1px solid rgb(255, 255, 255);
+}
+.icons .fa-angle-right {
+  border: 1px solid rgb(3, 167, 211);
+  background-color: rgb(3, 167, 211);
+  padding: 18px 18px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.icons .fa-angle-right:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 2, 48);
+  border: 1px solid rgb(255, 255, 255);
+}
+
 .icon {
   position: absolute;
   right: 5%;
@@ -51,35 +80,6 @@ section {
 .title p {
   font-size: 20px;
   color: rgb(6, 3, 3);
-}
-
-.icons {
-  color: rgb(255, 255, 255);
-  font-size: 23px;
-}
-.icons .fa-angle-left {
-  border: 1px solid rgb(3, 167, 211);
-  background-color: rgb(3, 167, 211);
-  padding: 18px 18px;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.icons .fa-angle-left:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(2, 2, 48);
-  border: 1px solid rgb(255, 255, 255);
-}
-.icons .fa-angle-right {
-  border: 1px solid rgb(3, 167, 211);
-  background-color: rgb(3, 167, 211);
-  padding: 18px 18px;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.icons .fa-angle-right:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(2, 2, 48);
-  border: 1px solid rgb(255, 255, 255);
 }
 
 header {
@@ -544,13 +544,14 @@ footer p {
     width: 100%;
   }
   #services .services .box .box-img {
-    margin-left: 135px;
+    margin-left: 40%;
   }
   #about .about {
+    height: 0 auto;
     grid-template-columns: 1fr;
   }
   #about .about .card {
-    width: 350px;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -562,7 +563,7 @@ footer p {
     text-align: left;
   }
   #about .about .image img {
-    width: 350px;
+    width: 100%;
   }
   #about .about .text {
     width: 350px;
@@ -594,6 +595,9 @@ footer p {
     width: 100px;
     padding: 10px 5px;
     margin-left: 100px;
+  }
+  footer {
+    padding-bottom: 50px;
   }
   footer .footer {
     grid-template-columns: 1fr;
